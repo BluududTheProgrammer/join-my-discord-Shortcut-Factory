@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shortcut Factory, an unofficial community for creating, testing, sharing, and discussing Apple Shortcuts.">
+  <title>Shortcut Factory 🏭</title>
+  <style>
+    :root {
+      --bg: #f4f5f7;
+      --card: #ffffff;
+      --text: #17181a;
+      --muted: #62666d;
+      --accent: #5865f2;
+      --accent-dark: #4752c4;
+      --border: #e1e3e6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 48px;
+      text-align: center;
+    }
+
+    .factory-icon {
+      font-size: 64px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 8vw, 4rem);
+      line-height: 1.05;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin: 14px 0 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background .15s ease, transform .15s ease;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    section { margin: 32px 0; }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 0 0 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .card strong {
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 32px 0 48px;
+      font-size: .9rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .button { transition: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <div class="factory-icon" aria-hidden="true">🏭</div>
+      <h1>Shortcut Factory</h1>
+      <p class="tagline">Build it. Test it. Ship it. ⚙️</p>
+
+      <!-- Replace the URL below with your actual Discord invite. -->
+      <a
+        class="button"
+        href="https://discord.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join the Factory
+      </a>
+    </header>
+
+    <section>
+      <h2>What happens here?</h2>
+
+      <div class="grid">
+        <article class="card">
+          <strong>📱 Share Shortcuts</strong>
+          <p>Show off your creations and useful automations.</p>
+        </article>
+
+        <article class="card">
+          <strong>🛠️ Get Help</strong>
+          <p>Work through Shortcut problems with other creators.</p>
+        </article>
+
+        <article class="card">
+          <strong>💡 Ideas</strong>
+          <p>Share projects you want to build next.</p>
+        </article>
+
+        <article class="card">
+          <strong>🏆 Showcase</strong>
+          <p>Put your best creations on display.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About Shortcut Factory</h2>
+      <p>
+        An unofficial community for people who enjoy creating, testing,
+        sharing, and discussing Apple Shortcuts.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>🚧 Factory Status</h2>
+      <p>
+        The factory is getting ready to open. More projects, channels,
+        and creations are coming.
+      </p>
+    </section>
+
+    <footer>
+      Shortcut Factory · Unofficial community
+    </footer>
+  </main>
+</body>
+</html>
